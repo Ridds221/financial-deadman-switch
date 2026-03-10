@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 320px; font-family: 'Segoe UI', sans-serif; padding: 15px; background: #121212; color: #e0e0e0; }
+    h2 { color: #ff4d4d; font-size: 1.1rem; margin: 0 0 10px 0; border-bottom: 1px solid #333; padding-bottom: 8px; }
+    h3 { font-size: 0.8rem; color: #888; margin: 15px 0 8px 0; text-transform: uppercase; letter-spacing: 1px; }
+    
+    .trial-item { background: #1e1e1e; padding: 10px; margin-bottom: 8px; border-radius: 6px; border-left: 4px solid #ff4d4d; display: flex; justify-content: space-between; align-items: center; }
+    .days-left { font-size: 10px; background: #ff4d4d; color: white; padding: 2px 6px; border-radius: 10px; margin-top: 4px; display: inline-block; }
+    
+    .quick-links { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .link-btn { background: #252525; color: #bbb; text-decoration: none; padding: 6px; font-size: 11px; text-align: center; border-radius: 4px; border: 1px solid #333; }
+    .link-btn:hover { background: #333; color: white; border-color: #ff4d4d; }
+
+    .input-group { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+    input { background: #252525; border: 1px solid #444; color: white; padding: 8px; border-radius: 4px; outline: none; }
+    button#addBtn { background: #ff4d4d; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    .delete-btn { background: none; border: none; color: #555; cursor: pointer; font-size: 16px; }
+    .delete-btn:hover { color: #ff4d4d; }
+  </style>
+</head>
+<body>
+  <h2>Active Switches</h2>
+  <div id="trialList"></div>
+
+  <h3>Bengaluru Quick-Links</h3>
+  <div class="quick-links">
+    <a href="https://www.zomato.com/gold" target="_blank" class="link-btn">Zomato Gold</a>
+    <a href="https://www.swiggy.com/my-account/swiggy-one" target="_blank" class="link-btn">Swiggy One</a>
+    <a href="https://www.hotstar.com/in/paywall" target="_blank" class="link-btn">Disney+ Hotstar</a>
+    <a href="https://www.amazon.in/amazonprime" target="_blank" class="link-btn">Amazon Prime</a>
+  </div>
+  <div style="margin-top:20px; text-align:center; font-size:10px; color:#444; border-top: 1px solid #222; padding-top:10px;">
+    v1.0 Developed by Riddhima Kaushik<br>
+    Bengaluru Tech Community Edition 🚀
+</div>
+
+  <div class="input-group">
+    <input type="text" id="serviceName" placeholder="Service Name">
+    <input type="date" id="expiryDate">
+    <button id="addBtn">Arm New Switch</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
